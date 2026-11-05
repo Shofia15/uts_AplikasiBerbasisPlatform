@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase 037 | Form Penyewaan</title>
+  <link rel="stylesheet" href="style037.css">
+  <script src="script037.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index037.html">DriveEase<span>037</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="index037.html">Dashboard</a>
+      <a href="katalog037.html">Katalog Mobil</a>
+      <a class="active" href="form037.html">Penyewaan</a>
+    </nav>
+  </header>
+  <main class="section form-section">
+    <div class="section-heading">
+      <p class="eyebrow">MULAI PERJALANAN</p>
+      <h1>Form Penyewaan</h1>
+      <p>Isi data berikut dengan benar untuk melakukan pemesanan.</p>
+    </div>
+    <form id="formPenyewaan" class="rental-form" novalidate>
+      <div class="form-row">
+        <label for="nama">Nama Lengkap</label>
+        <input id="nama" name="nama" type="text" placeholder="Contoh: omi 037" required>
+        <small class="field-error" id="namaError"></small>
+      </div>
+      <div class="form-row">
+        <label for="mobil">Pilihan Mobil</label>
+        <select id="mobil" name="mobil" required>
+          <option value="">-- Pilih mobil --</option>
+          <option>Toyota 037</option>
+          <option>Honda 037</option>
+          <option>Mitsubishi 037</option>
+        </select>
+        <small class="field-error" id="mobilError"></small>
+      </div>
+      <div class="form-row">
+        <label for="lamaSewa">Lama Sewa (hari)</label>
+        <input id="lamaSewa" name="lamaSewa" type="number" min="1" step="1" placeholder="Minimal 1 hari" required>
+        <small class="field-error" id="lamaError"></small>
+      </div>
+      <button class="button" type="submit">Konfirmasi Penyewaan</button>
+      <div id="hasil" class="form-result" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+  <footer>© 2026 DriveEase 037 · Website Studi Kasus Penyewaan Mobil</footer>
+</body>
+</html>
